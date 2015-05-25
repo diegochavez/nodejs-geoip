@@ -20,7 +20,7 @@ mmdbreader.open('./geo/GeoIP2-City.mmdb',function(err,countries){
         // log data :D
 		res.type('application/json');
 		res.send(geodata);
-    }); 
+    });
 });
 
        // console.log(ip_info);
