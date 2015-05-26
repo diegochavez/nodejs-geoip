@@ -1,8 +1,6 @@
 // Imports
 var mmdbreader = require('./node_modules/maxmind-db-reader');
 var express = require('./node_modules/express');
-var get_ip = require('./node_modules/ipware')().get_ip;
-
 
 app = express();
 
