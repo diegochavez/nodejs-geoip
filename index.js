@@ -11,8 +11,7 @@ app = express();
 
 app.get('/', function(req, res) {
 
-	var ip = get_ip(req);
-	var ip = "181.114.4.94";
+	var ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
 
 mmdbreader.open('./geo/GeoIP2-City.mmdb',function(err,countries){
     // get geodata
