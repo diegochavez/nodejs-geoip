@@ -12,7 +12,7 @@ app = express();
 app.get('/', function(req, res) {
 
 	var ip = get_ip(req);
-	var ip = ip.clientIp;
+	var ip = "181.114.4.94";
 
 mmdbreader.open('./geo/GeoIP2-City.mmdb',function(err,countries){
     // get geodata
