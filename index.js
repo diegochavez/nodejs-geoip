@@ -34,4 +34,6 @@ mmdbreader.open('./geo/GeoIP2-City.mmdb',function(err,countries){
 
 });
 
-app.listen(process.env.PORT || 8888, '0.0.0.0');
+app.listen(process.env.PORT || 8888, '0.0.0.0' , function(){
+  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+});
